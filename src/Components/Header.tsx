@@ -1,9 +1,22 @@
 import React from 'react'
 import DateRange from './DateRange'
 import Meses from './Meses'
+import { useLocation } from 'react-router-dom'
 
 const Header = () => {
-  const [title, setTitle] = React.useState("Resumo")
+  const location = useLocation();
+
+  const title =
+    location.pathname === '/'
+      ? 'Resumo'
+      : location.pathname === '/vendas'
+      ? 'Vendas'
+      : '';
+
+  React.useEffect(() => {
+    document.title = `Fintech | ${title}`;
+  }, [title]);
+
   return (
     <header className='mb'>
       <div className='daterange mb'>
