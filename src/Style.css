@@ -149,3 +149,11 @@ ul {
   text-decoration: none;
   color: inherit;
 }
+
+/* Keyframes */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
