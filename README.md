@@ -1,73 +1,134 @@
-# React + TypeScript + Vite
+# Fintech - React with TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Repository for the Fintech project from **"React with TypeScript"** course by Origamid.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project was developed to practice React with TypeScript concepts by building a fintech dashboard application with sales analytics, routing, reusable components, charts, responsive design, and context-based state management.
 
-## React Compiler
+# 🚀 Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> **https://fintech-origamid-otavioborgsm.vercel.app/**
 
-## Expanding the ESLint configuration
+## Dashboard / Summary
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Sales summary cards
+- Interactive charts
+- Date filters
+- Responsive layout
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Sales List
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Dynamic sales listing
+- Navigation between routes
+- Sales overview
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Sales Details
+
+- Individual sales information
+- Order details visualization
+- Route parameters with React Router
+
+
+# 📚 Features
+
+## Dashboard
+- Sales summary cards
+- Payment status overview
+- Interactive sales chart using Recharts
+- Date range filters
+
+## Sales Management
+- Sales listing page
+- Individual sale details page
+- Dynamic route navigation
+
+## UI / UX
+- Responsive layout for small screens
+- Sidebar navigation
+- Loading spinner component
+- Reusable components and styles
+
+
+# 🛠️ Technologies
+
+- React
+- TypeScript
+- Vite
+- React Router DOM
+- Recharts
+
+
+
+# 📖 Concepts Practiced
+
+## React + TypeScript
+- Functional components
+- Typed props and interfaces
+- Reusable components
+- Context API
+- Hooks with TypeScript
+
+## React Hooks
+- `useState`
+- `useEffect`
+- `useContext`
+- Custom Hooks
+
+## Routing
+- Route configuration
+- Dynamic routes
+- Navigation with `react-router-dom`
+
+## Data Visualization
+- Charts with Recharts
+- Data formatting
+- Sales analytics visualization
+
+## Styling
+- Base CSS setup
+- Responsive design
+- Layout organization
+- Component styling
+
+# ▶️ Running the Project
+
+Clone the repository:
+
+```bash
+git clone https://github.com/otavioborgsm/fintech-react-w-ts.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Access the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd fintech-react-w-ts
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+# 🌐 Routes
+
+| Route | Description |
+|---|---|
+| `/` | Sales summary dashboard |
+| `/vendas` | Sales listing page |
+| `/vendas/:id` | Sale details page |
+
+
+# 🎯 Purpose
+
+This repository was created for educational purposes during the Origamid React with TypeScript course, focusing on building a complete fintech dashboard application using modern React development practices.
